@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imzznet - Download Thumbnail YouTube</title>
+    <meta name="description" content="Download thumbnail YouTube dengan kualitas HD gratis - imzznet">
+    <meta name="keywords" content="youtube thumbnail, download thumbnail, imzznet, youtube tools">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-icon">🎬</div>
+                <h1 class="logo-text">imzznet</h1>
+            </div>
+            
+            <p class="tagline">Download Thumbnail YouTube dalam Kualitas HD</p>
+            
+            <div class="header-stats">
+                <div class="stat">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Gratis</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">⚡</span>
+                    <span class="stat-label">Cepat</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">🎯</span>
+                    <span class="stat-label">Mudah</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="input-section">
+                <h2>Masukkan URL Video YouTube</h2>
+                <div class="input-group">
+                    <input 
+                        type="url" 
+                        id="youtubeUrl" 
+                        placeholder="Contoh: https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                        required
+                    >
+                    <button id="downloadBtn">Generate Thumbnail</button>
+                </div>
+                <p class="helper-text">Tempel link YouTube di atas dan klik generate</p>
+            </div>
+        </section>
+
+        <section id="resultSection" class="result-section hidden">
+            <h2>Thumbnail Tersedia</h2>
+            <div class="thumbnails-grid" id="thumbnailsGrid">
+                <!-- Thumbnail akan ditampilkan di sini -->
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h3>Cara Menggunakan imzznet</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Salin URL video YouTube dari address bar browser</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>Tempel URL di kolom input di atas</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Klik tombol "Generate Thumbnail"</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <p>Pilih kualitas thumbnail dan download</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="quality-info">
+            <h3>Kualitas Thumbnail YouTube</h3>
+            <div class="quality-list">
+                <div class="quality-item">
+                    <strong>Max Resolution (maxresdefault.jpg)</strong>
+                    <span>Kualitas tertinggi - 1280x720px</span>
+                </div>
+                <div class="quality-item">
+                    <strong>High Quality (hqdefault.jpg)</strong>
+                    <span>Kualitas tinggi - 480x360px</span>
+                </div>
+                <div class="quality-item">
+                    <strong>Medium Quality (mqdefault.jpg)</strong>
+                    <span>Kualitas menengah - 320x180px</span>
+                </div>
+                <div class="quality-item">
+                    <strong>Standard (sddefault.jpg)</strong>
+                    <span>Kualitas standar - 640x480px</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 imzznet - YouTube Thumbnail Downloader</p>
+            <p>Website tools gratis untuk download thumbnail YouTube</p>
+        </div>
+    </footer>
+
+    <!-- Modal untuk preview -->
+    <div id="previewModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Preview Thumbnail">
+            <div class="modal-actions">
+                <button id="downloadModalBtn">Download Thumbnail</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+          </html>
